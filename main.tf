@@ -86,7 +86,7 @@ resource "helm_release" "logs" {
 
   values = [
     templatefile("./aws-fluentbit.tpl", {
-      logGroupName = "i2-fluentbit"
+      logGroupName = "${var.cluster}-fluentbit"
       region       = var.region
     })
   ]

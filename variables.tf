@@ -12,3 +12,8 @@ variable "env" {
   description = "Environment: dev/stag/prod"
   default     = "dev"
 }
+
+variable "cluster" {
+  description = "server details"
+  default     = "i2"
+}
