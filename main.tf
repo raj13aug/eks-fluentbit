@@ -80,7 +80,7 @@ resource "kubernetes_service_account" "fluentbit" {
 resource "helm_release" "logs" {
   repository = "https://aws.github.io/eks-charts"
   chart      = "aws-for-fluent-bit"
-  version    = "0.1.21" # (8 Sep, 2022) # https://artifacthub.io/packages/helm/aws/aws-for-fluent-bit
+  version    = "0.1.21" # (17 nov, 2022) # https://artifacthub.io/packages/helm/aws/aws-for-fluent-bit
   name       = "aws-fluent-bit"
   namespace  = kubernetes_namespace.logs.id
 
